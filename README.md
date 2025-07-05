@@ -17,10 +17,5 @@ Comments are added for most of the tags and styles to provide better understandi
   - Advanced features like dropdown menus, text decorations, and table styling.
   - Comments explaining the purpose and usage of each style.
 
-## How to Use:
-1. Clone the repository to your local machine.
-2. Open `Demo.html` in a browser to see the examples.
-3. Modify the code to experiment and learn.
-
 ## Purpose:
 This repository is designed for beginners to understand the basics of HTML and CSS through practical examples. It focuses on simplicity and clarity, with comments added to make learning easier.
