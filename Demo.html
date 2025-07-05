@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- makes sure all letters and symbols show up right -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Demo page</title>
+
+    <!-- Sets the small icon in the browser tab -->
+    <link
+      rel="icon"
+      href="https://media.istockphoto.com/id/530815244/vector/testing-laptop-applications-flat-illustration-isolated-on-white-background.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=iRhsuRLaHeOIrdsY2HhFxKlGe6IH19GpGTkKXCVlWIQ="
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- lets you use Google's material icons in your html -->
+    <style>
+      /* Reduces default spacing for demo */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      pre,
+      table,
+      dl,
+      ol,
+      form,
+      hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      hr {
+        margin: 8px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Headings: h1 is biggest, h2 is smaller, h3 is even smaller -->
+    <h1 id="heading1" style="color: blue; background-color: rgb(165, 136, 42)">
+      First Heading
+    </h1>
+    <!-- Grouping headings inside a div -->
+    <div class="semi heading">
+      <h2>Second heading</h2>
+      <h3>Third heading</h3>
+    </div>
+    <hr />
+
+    <!-- pre tag: keeps spaces and line breaks exactly as you type them -->
+    <pre id="pre1">
+This is 
+a 
+test 
+paragraph.</pre>
+    <hr />
+
+    <!-- a tag: makes a clickable link -->
+    <a id="link1" href="https://www.youtube.com/watch?v=0vEfDtV1MQU">
+      Click here to watch a video
+    </a>
+    <hr />
+
+    <!-- img tag: shows an image from the internet. If it can't load, it shows the alt text -->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ395qcYOPsd3cuhPPIzz871lLgqHr0Di0F5w&s"
+      height="200"
+      width="200"
+      alt="This is a potato"
+    />
+    <a id="link2" href="https://www.youtube.com/watch?v=mx6MzHYzEfY" target="">
+      Go to site
+    </a>
+    <!-- target="" means the link opens in the same tab -->
+    <hr />
+
+    <!-- Table: shows data in rows and columns -->
+    <table id="table1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>Tom</td>
+        <td>19</td>
+        <td>year 12</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>28</td>
+        <td>year 13</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- dl: description list. dt is the term, dd is the description -->
+    <dl>
+      <dt>Item 1</dt>
+      <dd>Description of item 1</dd>
+      <dt>Item 2</dt>
+      <dd>Description of item 2</dd>
+    </dl>
+    <hr />
+
+    <!-- ol: ordered (numbered) list -->
+    <ol>
+      <li>Ordered Item 1</li>
+      <li>Ordered Item 2</li>
+      <li>Ordered Item 3</li>
+    </ol>
+    <hr />
+
+    <!-- Form: lets user pick an option and submit -->
+    <form>
+      <input type="radio" id="option1" name="option" />
+      <label for="option1">Option 1</label>
+      <input type="radio" id="option2" name="option" />
+      <label for="option2">Option 2</label>
+      <button type="submit">Submit</button>
+      <!-- button sends the form data -->
+    </form>
+    <hr />
+
+    <!-- p tag: normal paragraph. This one has a border and padding from CSS -->
+    <p id="para1">
+      Everything we understand about the world comes to us through, and can be
+      captured by, the linguistic use of words and pictures. Or does it? This is
+      a question that addresses the core function and purpose of visual
+      communications design.
+    </p>
+    <hr />
+
+    <!-- right aligned text, set by CSS -->
+    <p id="rltext">this text is right aligned.</p>
+    <hr />
+
+    <!-- paragraph with different font and color, set by CSS -->
+    <p id="para2">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+      ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+      duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+      vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+      malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+      aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+      himenaeos.
+    </p>
+    <hr />
+
+    <!-- Material icons: these show icons from Google Fonts. Change the word to get a different icon -->
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">computer</i>
+    <hr />
+
+    <!-- Another table with different styles -->
+    <table id="table2">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>Tom</td>
+        <td>19</td>
+        <td>year 12</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>28</td>
+        <td>year 13</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- h2 with bold text and a paragraph inside -->
+    <h2 id="h2test">
+      Hi My Name is Carmen Winstead
+      <b>Hi My Name is</b>
+      <b>carmen Winstead</b>
+      <p>I'm 17 years old.</p>
+    </h2>
+
+    <div class="dropdown">
+      <button class="dropdown-button">dropdown-button</button>
+      <!-- Button to toggle dropdown -->
+      <div class="dropdown-menu">
+        <!-- div class for things inside the dropdown -->
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+body {
+  background-color: gray;
+}
+/* # for id selectors */
+
+#heading1 {
+  color: blue;
+  background-color: rgb(165, 136, 42);
+}
+
+/* . for class selectors */
+.semi.heading {
+  color: green;
+  font-style: italic;
+}
+
+/*
+  *{ color: ... } sets the color for everything, but if you put a more specific rule (like table, th, td, etc.) BELOW it,
+  that rule will override the universal one for those elements. If you put it ABOVE, the universal one will win and your color won't show.
+*/
+* {
+  color: darkslategray;
+}
+
+/* This overrides the * selector for tables and lists, but only if it comes after the * rule! */
+#table1,
+#table1 * {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* for classes and ids' it doesnt matter if below or above,it always override the universal */
+
+body {
+  background-image: url("https://plus.unsplash.com/premium_photo-1671650123234-85096b81babe?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlnaHQlMjBjb2xvdXJ8ZW58MHx8MHx8fDA%3D");
+  background-position: right top;
+  background-size: 100%;
+}
+
+#pre1 {
+  margin: 20px; /* since no top,left,right or bottom, it applies to all sides */
+}
+
+/* border-style can be solid, dotted, dashed, double, groove, ridge, inset, outset 
+   and we used solid style and gave a color to the border */
+#para1 {
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 10px; /* this is the radius of the border's corners */
+  border-width: 4px; /* we can use thick, medium, thin... as well */
+  margin: 20px; /* space OUTSIDE the border, pushes other things away */
+  padding: 15px; /* space INSIDE the border, adds space between border and text */
+  /* border-style: dashed double dotted solid (we can use it like this too - 
+     top, right, bottom, left and there are many other ways to style border.) */
+}
+
+#rltext {
+  color: rgb(166, 9, 9);
+  text-align: right; /* this aligns the text to the right */
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px;
+
+  text-decoration: overline underline; /* this adds an overline and underline to the text */
+  text-decoration-color: purple; /* this sets the color of the text decoration */
+  text-decoration-thickness: 2px; /* this sets the thickness of the text decoration */
+  text-decoration-style: wavy; /* this sets the style of the text decoration */
+}
+
+#link1 {
+  color: rgb(0, 26, 255);
+  text-decoration: wavy underline; /* this adds a wavy underline to the link */
+  text-decoration-color: red; /* this sets the color of the link */
+}
+
+#link2 {
+  color: rgb(0, 26, 255);
+  text-decoration: wavy underline;
+  text-decoration-color: red;
+}
+
+#para2 {
+  text-transform: uppercase; /* this makes the text uppercase */
+  font-family: "Courier New", Courier, monospace; /* this sets the font family */
+  color: rgb(7, 1, 183);
+}
+
+.material-icons {
+  font-size: 50px; /* this sets the size of the icon */
+  color: rgb(0, 0, 0);
+}
+
+#table2,
+#table2 * {
+  width: 50%;
+  border-collapse: collapse; /* this makes the borders collapse into a single border */
+  color: black;
+  border: 2px solid black;
+  background-color: rgb(157, 215, 222);
+}
+
+#table2 th {
+  height: 50px; /* sets the height of all table headings in table2 */
+}
+
+#table2 td {
+  height: 10px; /* sets the height of all table cells in table2 */
+  text-align: center; /* centers the text in all table cells in table2 */
+  min-width: 80px; /* sets the minimum width of all table cells in table2 */
+}
+
+#table2 tr:hover {
+  /* this applies a style when the mouse hovers over a row */
+  background-color: blue; /* this changes the background color of the row when hovered */
+}
+
+#h2test > b {
+  color: brown;
+}
+
+.dropdown-button {
+  background-color: blue;
+  color: white;
+  padding: 10px; /* adds padding inside the button */
+  font-size: 16px; /* sets the font size of the button */
+  border: none; /* removes the border from the button */
+  cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
+}
+
+.dropdown-menu {
+  display: none; /* hide the menu initially */
+  position: absolute; /* positions the dropdown menu */
+  background-color: lightblue;
+  min-width: 140px; /* sets the minimum width of the dropdown menu */
+}
+
+.dropdown {
+  position: relative; /* positions the dropdown relative to its parent */
+  display: inline-block; /* allows the dropdown to be inline with other elements */
+}
+
+.dropdown-menu a {
+  color: black; /* sets the color of the links inside the dropdown menu */
+  padding: 11px 15px; /* adds padding inside the links */
+  text-decoration: none; /* removes the underline from the links */
+  display: block; /* makes the links block elements */
+}
+
+.dropdown-menu a:hover {
+  background-color: white; /* changes the background color of the links when hovered */
+  color: rgb(13, 0, 255); /* changes the text color of the links when hovered */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* shows the dropdown menu when hovering over the button */
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: darkblue;
+}
+
