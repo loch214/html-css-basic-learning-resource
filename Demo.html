@@ -20,12 +20,63 @@
     <!-- lets you use Google's material icons in your html -->
     <style>
       /* Reduces default spacing for demo */
-      body,h1,h2,h3,p,pre,table,dl,ol,form,hr {
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      pre,
+      table,
+      dl,
+      ol,
+      form,
+      hr {
         margin-top: 10px;
         margin-bottom: 10px;
       }
       hr {
         margin: 8px 0;
+      }
+
+      /* Flexbox styles */
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      .flex-item {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      /* Box shadow style */
+      .shadow-box {
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Transition effect for button */
+      .transition-button {
+        background-color: #008cba;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .transition-button:hover {
+        background-color: #005f73;
       }
     </style>
   </head>
@@ -47,7 +98,8 @@
 This is 
 a 
 test 
-paragraph.</pre>
+paragraph.</pre
+    >
     <hr />
 
     <!-- a tag: makes a clickable link -->
@@ -185,5 +237,111 @@ paragraph.</pre>
         <a href="#">Link 3</a>
       </div>
     </div>
+    <hr />
+
+    <!-- span tag: used for inline styling, doesn't break the line -->
+    <p>
+      This is a paragraph with <span id="highlight">highlighted text</span> in
+      the middle.
+    </p>
+    <hr />
+
+    <!-- ul: unordered (bulleted) list -->
+    <ul>
+      <li>Unordered Item 1</li>
+      <li>Unordered Item 2</li>
+      <li>Unordered Item 3</li>
+    </ul>
+    <hr />
+
+    <!-- strong and em tags: for emphasis -->
+    <p>
+      This text has <strong>strong importance</strong> and this text is
+      <em>emphasized</em>.
+    </p>
+    <hr />
+
+    <!-- blockquote tag: for quotes -->
+    <blockquote id="quote1">
+      "The best way to learn web development is by practicing and building
+      projects."
+    </blockquote>
+    <hr />
+
+    <!-- code tag: for displaying code -->
+    <p>To create a paragraph in HTML, use the <code>&lt;p&gt;</code> tag.</p>
+    <hr />
+
+    <!-- More form elements -->
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+      <br /><br />
+
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        placeholder="Enter your message"
+      ></textarea>
+      <br /><br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
+    <hr />
+
+    <!-- br tag: line break -->
+    <p>This is line one.<br />This is line two after a line break.</p>
+    <hr />
+
+    <!-- iframe tag: embeds another webpage -->
+    <iframe
+      id="embed1"
+      src="https://www.wikipedia.org"
+      width="400"
+      height="200"
+      title="Wikipedia"
+    >
+      Your browser does not support iframes.
+    </iframe>
+    <hr />
+
+    <!-- Flexbox example -->
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+    <hr />
+
+    <!-- Box shadow example -->
+    <div class="shadow-box">
+      This box has a shadow effect created with CSS box-shadow property.
+    </div>
+    <hr />
+
+    <!-- Transition example -->
+    <button class="transition-button">Hover me for smooth transition!</button>
+    <hr />
   </body>
 </html>

@@ -160,3 +160,183 @@ body {
   background-color: darkblue;
 }
 
+/* span tag styling: for inline highlighting */
+#highlight {
+  background-color: yellow; /* highlights the text with yellow background */
+  color: black;
+  font-weight: bold;
+}
+
+/* ul styling: unordered list styling */
+ul {
+  list-style-type: square; /* changes bullet points to squares */
+  margin: 20px;
+  padding-left: 30px; /* adds space before the bullets */
+}
+
+ul li {
+  margin-bottom: 5px; /* adds space between list items */
+  color: darkgreen;
+}
+
+/* strong and em tag styling */
+strong {
+  color: red; /* makes strong text red */
+  font-weight: bold;
+}
+
+em {
+  color: purple; /* makes emphasized text purple */
+  font-style: italic;
+}
+
+/* blockquote styling: for quotes */
+#quote1 {
+  border-left: 4px solid blue; /* adds a blue line on the left */
+  padding-left: 20px; /* adds space after the blue line */
+  margin: 20px 0;
+  font-style: italic;
+  color: darkblue;
+  background-color: lightgray;
+  padding: 15px;
+}
+
+/* code tag styling: for inline code */
+code {
+  background-color: lightgray; /* gray background for code */
+  padding: 2px 5px; /* small padding around the code */
+  border-radius: 3px; /* rounded corners */
+  font-family: "Courier New", monospace; /* monospace font for code */
+  color: darkred;
+  font-size: 14px;
+}
+
+/* Form styling */
+#contact-form {
+  background-color: #f4f4f4; /* light gray background */
+  padding: 20px; /* space inside the form */
+  border-radius: 10px; /* rounded corners */
+  margin: 20px;
+  max-width: 500px; /* limits the width of the form */
+}
+
+#contact-form label {
+  font-weight: bold; /* makes labels bold */
+  color: #333; /* dark gray color for labels */
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+  width: 100%; /* makes inputs take full width */
+  padding: 8px; /* space inside inputs */
+  margin-bottom: 10px; /* space below inputs */
+  border: 2px solid #ddd; /* light gray border */
+  border-radius: 5px; /* rounded corners */
+  font-size: 14px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form select:focus {
+  border-color: blue; /* changes border color when clicked */
+  outline: none; /* removes default outline */
+}
+
+#contact-form button {
+  background-color: green; /* green background for submit button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-form button:hover {
+  background-color: darkgreen; /* darker green when hovered */
+}
+
+/* iframe styling */
+#embed1 {
+  border: 2px solid black; /* adds border around iframe */
+  border-radius: 5px; /* rounded corners */
+  margin: 20px;
+}
+
+/* Flexbox example: centers content horizontally */
+.flex-container {
+  display: flex; /* enables flexbox */
+  justify-content: center; /* centers items horizontally */
+  align-items: center; /* centers items vertically */
+  height: 100px; /* sets height for the container */
+  background-color: lightblue;
+  margin: 20px;
+}
+
+.flex-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Box shadow example */
+.shadow-box {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* adds shadow: x y blur color */
+  border-radius: 10px;
+}
+
+/* Transition example: smooth color change */
+.transition-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* smooth transition for all properties */
+  margin: 20px;
+}
+
+.transition-button:hover {
+  background-color: red; /* changes to red smoothly when hovered */
+  transform: scale(1.1); /* makes button slightly bigger */
+}
+
+/* Pseudo-class examples */
+ol li:first-child {
+  color: red; /* makes the first list item red */
+  font-weight: bold;
+}
+
+ol li:last-child {
+  color: blue; /* makes the last list item blue */
+  font-weight: bold;
+}
+
+ol li:nth-child(2) {
+  color: green; /* makes the second list item green */
+  font-style: italic;
+}
+
+/* Media query: makes the page responsive for small screens */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* smaller font on small screens */
+  }
+
+  #contact-form {
+    margin: 10px; /* less margin on small screens */
+    padding: 15px;
+  }
+
+  #table2 {
+    width: 100%; /* table takes full width on small screens */
+  }
+}
